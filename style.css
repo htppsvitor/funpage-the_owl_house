@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Press+Start+2P&display=swap");
+
 :root {
     --background-color: #202020;
+    --color-general: #ffffff;
+    --color-second: #C06BF5;
 }
 
 * {
@@ -10,8 +14,28 @@
 
 body {
     background:var(--background-color);
+    color: var(--color-general);
+    font-family: 'League Gothic';
+}
+
+header {
+    display:flex ;
+    justify-content: space-between;
+}
+
+.scroll {
+    display: flex;
+}
+
+.scroll-analogico {
+    display: flex;
+}
+
+video  {
+    width: 400px;
 }
 
 img {
     width: 200px;
 }
+
