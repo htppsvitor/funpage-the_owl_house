@@ -164,10 +164,31 @@ header .menu-list ul,a:hover {
 }
 
 
+.section-historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
 
+.section-historia video {
+    position: relative;
+    width: 95vw;
+    border-radius: 71px 0 71px 0;
+}
 
+.section-historia h2 {
+    font-size: 13vw;
+    margin-top: 38vw;
+    left: 25px;
+    position: absolute;
+}
 
-
+.section-historia p {
+    text-align: justify;
+    margin: 20px;
+    width: 93vw;
+}
 
 
 
@@ -186,9 +207,7 @@ header .menu-list ul,a:hover {
     overflow: hidden;
 }
 
-video  {
-    width: 400px;
-}
+
 
 img {
     width: 200px;
