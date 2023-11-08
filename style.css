@@ -11,18 +11,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
+
+html {
+    overflow-x: hidden;
+ }
 
 body {
     background:var(--background-color);
     color: var(--color-general);
     font-family: 'League Gothic';
-    width: 100Vw;
-    
+    width: 100vw;
     overflow-x: hidden;
-    
-    overscroll-behavior: smooth;
+
 }
 
 ::-webkit-scrollbar {
@@ -30,12 +31,13 @@ body {
 }
 
 
-
 header {
     display:flex ;
     width: 100vw;
+    position: relative;
     justify-content: space-between;
     font-family: 'Gothic A1';
+    
 }
 
 header h3 {
@@ -44,7 +46,7 @@ header h3 {
 }
 
 header .menu {
-    position:  fixed;
+    position:  absolute ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +62,7 @@ header .menu {
     cursor: pointer;
     transition: 1s;
     
-    z-index: 1;
+    z-index: 2;
 }
 
 header .menu span {
@@ -71,7 +73,7 @@ header .menu span {
 }
 
 header .menu-list {
-    position: fixed;
+    position: absolute;
     display: flex;
     width: 120px;
     height: 140px;
@@ -81,7 +83,9 @@ header .menu-list {
     right:0px;
     border-radius: 0 0 0 20px;
     transition: 1s;
-    transform: translateX(100%);
+    transform: translatey(-100%);
+    z-index: 1;
+    
 }
 
 header .menu-list ul,a {
@@ -89,6 +93,7 @@ header .menu-list ul,a {
     color: var(--color-general);
     text-decoration: none;
     transition: .5s;
+
 }
 
 header .menu-list ul,a:hover {
@@ -99,25 +104,63 @@ header .menu-list ul,a:hover {
 }
 
 .menu-list.active {
-    transform: translateX(0);
+    transform: translatey(0);
 }
 
 
 .section-home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .section-home div {
-    font-size: 2.3rem;
-    padding: 30px 0 0 10px ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding: 60px 0 0 4vw;
 }
 
-.section-home div h1:last-child {
-    margin-left: 50px;
+.section-home div h1 {
+    font-size: 15vw;
 }
 
-.section-home div span {
+.section-home div h1:nth-child(-n + 2) span {
+    padding-left: 12vw;
+}
+
+.section-home div h1:nth-child(n + 2) span {
     color: var(--color-second);
+}
+
+.section-home div h1:last-child span {
+    padding-left: 25vw;
+}
+
+.section-home img {
+    position: absolute;
+    width: 23vw;
+    top: 80px;
+    right: 0px;
+    transform: rotate(20deg);
+}
+
+.section-home .carrossel {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 30px;
+    gap:15px;
+    color: #616161;
+    font-family: "Press Start 2P";
+}
+
+.section-home .carrossel span {
+    animation: rodaroda 5s linear 0s normal infinite;
 }
 
 
@@ -134,10 +177,13 @@ header .menu-list ul,a:hover {
 
 .scroll {
     display: flex;
+
+    overflow: hidden;
 }
 
 .scroll-analogico {
     display: flex;
+    overflow: hidden;
 }
 
 video  {
@@ -148,3 +194,16 @@ img {
     width: 200px;
 }
 
+
+
+
+/*  @KEYFRAMES  */
+
+@keyframes rodaroda {
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(-100vw,0);
+    }
+}
