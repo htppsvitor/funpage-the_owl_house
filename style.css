@@ -174,13 +174,14 @@ header .menu-list ul,a:hover {
 .section-historia video {
     position: relative;
     width: 95vw;
-    border-radius: 71px 0 71px 0;
+    border-radius: 41px 0 41px 0;
+    box-shadow: 5px -5px 0px .5px var(--color-second);
 }
 
 .section-historia h2 {
     font-size: 13vw;
     margin-top: 38vw;
-    left: 25px;
+    left: 5vw;
     position: absolute;
 }
 
@@ -191,6 +192,25 @@ header .menu-list ul,a:hover {
 }
 
 
+.section-covens {
+    position: relative;
+    background-color: var(--color-second);
+}
+
+.section-covens h2 {
+    position: absolute;
+    margin-top: -17vw;
+    left: 2vw;
+    color: transparent;
+    font-size: 13vw;
+    -webkit-text-stroke: .5px;
+    -webkit-text-stroke-color: var(--color-general);
+}
+
+.section-covens img {
+    width: 100px;
+    cursor: pointer;
+}
 
 
 
