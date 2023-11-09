@@ -207,11 +207,23 @@ header .menu-list ul,a:hover {
     -webkit-text-stroke-color: var(--color-general);
 }
 
-.section-covens img {
-    width: 100px;
+.section-covens div {
+    display: grid;
+    grid-template-areas: "img img img";
+    justify-content: space-around;
+    
+}
+
+.section-covens div img:not(:nth-child(2)) {
+    width: 20vw;
+    margin: 3vw;
     cursor: pointer;
 }
 
+.section-covens div img:nth-child(2) {
+    width: 17vw;
+    cursor: pointer;
+}
 
 
 
