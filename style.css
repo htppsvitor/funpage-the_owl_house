@@ -79,7 +79,7 @@ header .menu-list {
     position: fixed;
     display: flex;
     width: 120px;
-    height: 140px;
+    height: 180px;
     padding: 20px 0 0 15px;
     background-color: var(--color-second);
 
@@ -97,6 +97,10 @@ header .menu-list ul,a {
     text-decoration: none;
     transition: .5s;
 
+}
+
+hr {
+    margin: 10px 0 10px 0;
 }
 
 header .menu-list ul,a:hover {
@@ -176,15 +180,15 @@ header .menu-list ul,a:hover {
 
 .section-historia video {
     position: relative;
-    width: 95vw;
+    width: 92vw;
     border-radius: 41px 0 41px 0;
     box-shadow: 5px -5px 0px .5px var(--color-second);
 }
 
 .section-historia h2 {
     font-size: 13vw;
-    margin-top: 38vw;
-    left: 5vw;
+    margin-top: 36vw;
+    left: 7vw;
     position: absolute;
 }
 
@@ -221,11 +225,13 @@ header .menu-list ul,a:hover {
     width: 20vw;
     margin: 3vw;
     cursor: pointer;
+    animation: roda-eixo 3s infinite alternate;
 }
 
 .section-covens div img:nth-child(2) {
     width: 17vw;
     cursor: pointer;
+    animation: roda-eixo 3s infinite alternate;
 }
 
 
@@ -250,7 +256,7 @@ header .menu-list ul,a:hover {
     width: 85vw;
     margin:0 0 5vw 5vw;
     border-radius: 10vw 10vw 0 10vw;
-    box-shadow: -2vw 2vw 0px 1vw var(--color-general);
+    box-shadow: -1vw 1vw 0px 1vw var(--color-general);
 }
 
 .section-personagens .box-imagem span {
@@ -303,6 +309,7 @@ header .menu-list ul,a:hover {
 
 .section-lugares .scroll-analogico {
     display: flex;
+    padding-bottom: 30px;
 }
 
 .section-lugares .scroll-analogico .seta {
@@ -356,6 +363,42 @@ header .menu-list ul,a:hover {
 }
 
 
+footer {
+    display: flex;
+    padding-bottom: 7vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #linha-footer {
+    width: 90%;
+    height: 1px;
+    background-color: var(--color-general);
+    margin: 0 0 20px 0;
+}
+
+footer .bth-footer {
+    display: flex;
+    gap: 2vw;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50px;
+    background-color: var(--color-second);
+    cursor: pointer;
+}
+
+footer .name-footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    margin-top: 5vw;
+}
 
 
 
@@ -372,9 +415,9 @@ header .menu-list ul,a:hover {
 }
 
 @keyframes roda-eixo {
-	100% { transform: rotate(-10grad);
+	100% { transform: rotate(-12grad);
     }
 	0% {
-		transform: rotate(10grad);
+		transform: rotate(12grad);
 	}
 }
