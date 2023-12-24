@@ -238,14 +238,14 @@ header .menu-list ul,a:hover {
 
 .section-personagens h2 {
     font-size: 13vw;
-    margin: 0 0 10px 3vw
+    margin: 0 0 5px 3vw
 }
 
 .section-personagens .scroll {
     display: flex;
     overflow: hidden;
     overflow-x: auto;
-    padding: 5vw 5vw 5vw 0vw;
+    padding: 2vw 5vw 5vw 0vw;
     gap: 10px;
 }
 
@@ -258,9 +258,9 @@ header .menu-list ul,a:hover {
     height: 100vw;
     object-fit: cover;
     object-position: center;
-    margin:0 0 5vw 5vw;
+    margin:0 0 25px 20px;
     border-radius: 10vw 10vw 10vw 10vw;
-    box-shadow: 0vw 1vw 0px 2vw var(--color-general);
+    box-shadow: 0vw 6px 0px 8px var(--color-general);
 }
 
 .section-personagens .scroll .box-imagem:nth-child(11) img {
@@ -460,4 +460,197 @@ footer .name-footer {
 	0% {
 		transform: rotate(12grad);
 	}
+}
+
+
+                                                                                      
+/*  @MIDIAQUERY  */
+
+@media (min-width:490px) {
+
+    .section-historia p {
+        font-size: 1.2rem;
+    }
+
+    .section-personagens h2 {
+        font-size: 10vw;
+        margin: 0 0 1px 3vw
+    }
+
+    .section-personagens .scroll .box-imagem img {
+        width: 45vw;
+        height: 90vw;
+    }
+
+    .section-personagens .box-imagem span {
+        margin-top: 90vw;
+        right:12vw;
+        width: 20vw;
+    }
+}
+
+@media (min-width:600px) {
+
+    .section-personagens h2 {
+        font-size: 13vw;
+        margin: 0 0 1px 3vw
+    }
+
+    .section-personagens .scroll .box-imagem img {
+        width: 70vw;
+        height: 50vw;
+        border-radius: 50px;
+    }
+
+    .section-personagens .box-imagem span {
+        margin-top: 50vw;
+        right:14vw;
+        width: 40vw;
+    }
+}
+
+@media (min-width:800px) {
+    
+    .section-historia h2 {
+        font-size: 9vw;
+        margin-top: 40vw;
+        left: 7vw;
+    }
+
+    .section-historia video {
+        width: 90vw;
+        box-shadow: 5px -5px 0px 2px var(--color-second);
+    }
+
+    .section-historia p {
+        font-size: 1.5rem;
+    }
+
+    .section-covens h2 {
+        font-size: 9vw;
+    }
+
+
+    .section-covens div {
+        display: flex;
+        flex-wrap: wrap;
+        height: 35vw;
+        justify-content: space-around;
+        
+    }
+
+    .section-covens div img:not(:nth-child(2)) {
+    
+        width: 10vw;
+        height: 10vw;
+        
+    }
+
+
+    .section-covens div img:nth-child(2) {
+        width: 9vw;
+        height: 12vw;  
+    }
+
+    .section-covens div img:nth-child(2n-1):nth-child(n+1):nth-child(-n+5) {
+        margin-top: 10vw;
+    }
+    
+    .section-personagens h2 {
+        font-size: 10vw;
+        margin: 0 0 0 3vw
+    }
+
+    .section-personagens .scroll .box-imagem img {
+        width: 65vw;
+        height: 45vw;
+    }
+
+    .section-personagens .box-imagem span {
+        margin-top: 45vw;
+        right:14vw;
+        width: 35vw;
+    }
+
+
+}
+
+@media (min-width:1000px) {
+
+    .section-historia {
+        flex-direction: row;
+        margin-top: 60px;
+        padding: 0 20px 0 20px;
+    }
+    
+    .section-historia video {
+        position: relative;
+        width: 60vw;
+    }
+    
+    .section-historia h2 {
+        font-size: 7vw;
+        margin-top: -28vw;
+        left: 64vw;
+    }
+    
+    .section-historia p {
+        text-align: justify;
+        margin: 20px;
+        margin-top: 55px;
+        font-size: 1.1rem;
+        width: 50vw;
+    }
+
+    .section-personagens h2 {
+        font-size: 8vw;
+        margin: 0 0 0 3vw
+    }
+
+    .section-personagens .scroll .box-imagem img {
+        width: 55vw;
+        height: 35vw;
+    }
+
+    .section-personagens .box-imagem span {
+        margin-top: 35vw;
+        font-size: 4vw;
+        right:14vw;
+        width: 25vw;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .section-historia p {
+        font-size: 1.3rem;
+    }
+
+    .section-historia h2 {
+        left: 63vw;
+    }
+
+    .section-personagens h2 {
+        font-size: 8vw;
+        margin: 0 0 0 3vw
+    }
+
+    .section-personagens .scroll .box-imagem img {
+        width: 50vw;
+        height: 30vw;
+    }
+
+    .section-personagens .box-imagem span {
+        margin-top: 30vw;
+        font-size: 4vw;
+        right:14vw;
+        width: 25vw;
+    }
+}
+
+@media (min-width:1400px) {
+
+    .section-historia p {
+        font-size: 1.5rem;
+    }
 }
