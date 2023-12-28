@@ -503,6 +503,19 @@ footer .name-footer {
         border-radius: 50px;
     }
 
+    .section-personagens .scroll .box-imagem img {
+        object-fit: fill;
+        object-position: center;
+    }
+
+    .section-personagens .scroll .box-imagem:nth-child(11) img {
+        object-position: center;
+    }
+    
+    .section-personagens .scroll .box-imagem:nth-child(12) img {
+        object-position: center;
+    }
+
     .section-personagens .box-imagem span {
         margin-top: 50vw;
         right:14vw;
@@ -570,11 +583,6 @@ footer .name-footer {
     .section-personagens h2 {
         font-size: 10vw;
         margin: 0 0 0 3vw
-    }
-
-    .section-personagens .scroll .box-imagem img {
-        width: 65vw;
-        height: 45vw;
     }
 
     .section-personagens .box-imagem span {

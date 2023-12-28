@@ -7,7 +7,7 @@
 
 </p>
 
-<img src="asset/img/Layout_page.png">
+<img src="asset/img/capa_funpage.png">
 
 
 ## PROJETO
