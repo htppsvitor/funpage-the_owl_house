@@ -78,13 +78,13 @@ header .menu span {
 header .menu-list {
     position: fixed;
     display: flex;
-    width: 120px;
+    width: 160px;
     height: 180px;
-    padding: 20px 0 0 15px;
+    padding: 20px 0 0 40px;
     background-color: var(--color-second);
 
     right:0px;
-    border-radius: 0 0 0 20px;
+    border-radius: 37% 0% 43% 39% / 68% 10% 24% 48%  ;
     transition: 1s;
     transform: translatey(-100%);
     z-index: 1;
@@ -205,6 +205,7 @@ header .menu-list ul,a:hover {
     background-color: var(--color-second);
 }
 
+
 .section-covens h2 {
     position: absolute;
     margin-top: -17vw;
@@ -215,25 +216,86 @@ header .menu-list ul,a:hover {
     -webkit-text-stroke-color: var(--color-general);
 }
 
-.section-covens div {
+.section-covens .conteiner-img {
     display: grid;
     grid-template-areas: "img img img";
     justify-content: space-around;
     
 }
 
-.section-covens div img:not(:nth-child(2)) {
+.section-covens .conteiner-img div {
+    position: relative;
+}
+
+.section-covens .conteiner-img div img:not(:nth-child(2)) {
     width: 20vw;
     margin: 3vw;
     cursor: pointer;
     animation: roda-eixo 3s infinite alternate;
 }
 
-.section-covens div img:nth-child(2) {
+.section-covens .conteiner-img div img:nth-child(2) {
     width: 17vw;
     cursor: pointer;
     animation: roda-eixo 3s infinite alternate;
 }
+
+
+.section-covens .conteiner-img div:hover::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    padding: .3vw .5vw .3vw .5vw;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    color: var(--background-color);
+    background-color: var(--color-general);
+    box-shadow: 2px 3px 0px .5px var(--background-color);
+    position: absolute;
+    left: 10px;
+    top: 70%;
+    z-index: 2;
+
+}
+
+.section-covens .conteiner-img div:nth-child(1):hover::before {
+    content: 'Abominações';
+}
+
+.section-covens .conteiner-img div:nth-child(2):hover::before {
+    content: 'Bardo';
+}
+
+.section-covens .conteiner-img div:nth-child(3):hover::before {
+    content: 'Criaturas';
+}
+
+.section-covens .conteiner-img div:nth-child(4):hover::before {
+    content: 'Construção';
+}
+
+.section-covens .conteiner-img div:nth-child(5):hover::before {
+    content: 'Cura';
+}
+
+.section-covens .conteiner-img div:nth-child(6):hover::before {
+    content: 'Ilusão';
+}
+
+.section-covens .conteiner-img div:nth-child(7):hover::before {
+    content: 'Oráculo';
+}
+
+.section-covens .conteiner-img div:nth-child(8):hover::before {
+    content: 'Fitocinese';
+}
+
+.section-covens .conteiner-img div:nth-child(9):hover::before {
+    content: 'Poções';
+}
+
 
 
 .section-personagens h2 {
@@ -346,7 +408,6 @@ header .menu-list ul,a:hover {
 .section-lugares .box-img-analogico div div:hover {
     width: 92vw;
     height: 57vw;
-    margin: 10px 0 10px 0;
     transition: 1s;
 }
 
@@ -555,7 +616,7 @@ footer .name-footer {
     }
 
 
-    .section-covens div {
+    .section-covens .conteiner-img {
         display: flex;
         flex-wrap: wrap;
         height: 35vw;
@@ -563,7 +624,7 @@ footer .name-footer {
         
     }
 
-    .section-covens div img:not(:nth-child(2)) {
+    .section-covens .conteiner-img div img:not(:nth-child(2)) {
     
         width: 10vw;
         height: 10vw;
@@ -571,13 +632,19 @@ footer .name-footer {
     }
 
 
-    .section-covens div img:nth-child(2) {
+    .section-covens .conteiner-img div img:nth-child(2) {
         width: 9vw;
         height: 12vw;  
     }
 
-    .section-covens div img:nth-child(2n-1):nth-child(n+1):nth-child(-n+5) {
+    .section-covens .conteiner-img div:nth-child(2n-1):nth-child(n+1):nth-child(-n+5) {
         margin-top: 10vw;
+    }
+
+    .section-covens .conteiner-img div:hover::before {
+        font-size: 2vw;
+        border-radius: 10px;
+        left: 10px;
     }
     
     .section-personagens h2 {
