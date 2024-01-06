@@ -376,6 +376,7 @@ header .menu-list ul,a:hover {
     background-color: var(--color-general);
     margin: 0 2vw 0 2vw;
     border-radius: 20px;
+    padding-bottom: 10px;
     margin-bottom: 15px
 }
 
@@ -391,34 +392,33 @@ header .menu-list ul,a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 285vw;
+    height: 288vw;
 }
 
-.section-lugares .box-img-analogico div div{
+.section-lugares .box-img-analogico div label{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 10px;
-    position: relative;
     width: 90vw;
     height: 55vw;
     transition: 1s;
 }
 
-.section-lugares .box-img-analogico div div:hover {
-    width: 92vw;
-    height: 57vw;
-    transition: 1s;
+.section-lugares .front  {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-.section-lugares div img {
+.section-lugares .front img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
     transition: 1s;
 }
 
-.section-lugares div img:hover {  
+.section-lugares .front img:hover {  
     box-shadow: 0px 0px 0px 4px var(--color-second);
     transition: 1s;
 }
@@ -430,6 +430,63 @@ header .menu-list ul,a:hover {
     font-size: 8vw;
     color: var(--color-general);
 }
+
+.section-lugares .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.6s;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+
+.section-lugares .back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #202020;
+    border-radius: 20px;
+    align-items: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+    padding: 5vw 5vw;
+    
+}
+
+.section-lugares .back div{
+    width: 6%;
+    height: 90%;
+    border-radius: 10px;
+    margin-right: 8px;
+    background-color: var(--color-second);
+    
+}
+
+.switch {
+    display: none;
+}
+
+#switch1:checked ~ #card1 {
+    transform: rotateY(180deg);
+}
+
+#switch2:checked ~ #card2 {
+    transform: rotateY(180deg);
+}
+
+#switch3:checked ~ #card3 {
+    transform: rotateY(180deg);
+}
+
+#switch4:checked ~ #card4 {
+    transform: rotateY(180deg);
+}
+
+#switch5:checked ~ #card5 {
+    transform: rotateY(180deg);
+}
+
 
 
 footer {
