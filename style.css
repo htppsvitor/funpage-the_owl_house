@@ -438,6 +438,7 @@ header .menu-list ul,a:hover {
     margin-bottom: 10px;
     cursor: pointer;
     
+    
 }
 
 .section-lugares .back {
@@ -449,7 +450,8 @@ header .menu-list ul,a:hover {
     align-items: center;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-
+    font-size: 3vw;
+    font-family: 'Gothic A1';
     padding: 5vw 5vw;
     
 }
@@ -649,6 +651,30 @@ footer .name-footer {
         width: 55vw;
         transform: translate(50%, 30%);
     }
+
+    footer .bth-footer {
+        padding-left: 24%;
+    }
+
+    footer .social {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    footer .social img {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    footer .bth-top {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    footer .name-footer {
+        font-size: 1.5vw;
+        margin-top: 3vw;
+    }
 }
 
 @media (min-width:800px) {
@@ -732,7 +758,7 @@ footer .name-footer {
         padding-bottom: 1vw;
     }
 
-    .section-lugares .box-img-analogico div{
+    .section-lugares .box-img-analogico .conteiner-cards{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -744,12 +770,12 @@ footer .name-footer {
         transition: 1s;
     }
 
-    .section-lugares .box-img-analogico div:nth-child(1) div{
+    .section-lugares .box-img-analogico .conteiner-cards:nth-child(1) label{
         width: 30vw;
         height: 20vw;
     }
 
-    .section-lugares .box-img-analogico div:nth-child(2) div{
+    .section-lugares .box-img-analogico .conteiner-cards:nth-child(2) label{
         width: 46vw;
         height: 30vw;
     }
@@ -760,6 +786,47 @@ footer .name-footer {
         font-size: 3.5vw;
     }
 
+    .section-lugares .conteiner-cards:nth-child(1) .back {
+        font-size: 1.5vw;
+        padding: 3vw 3vw;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .section-lugares .conteiner-cards:nth-child(1) .front {
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    .section-lugares .conteiner-cards:nth-child(1) .back div{
+        width: 10%;
+        height: 100%;
+        border-radius: 10px;
+        margin-right: 6px;
+        background-color: var(--color-second);
+        
+    }
+
+    .section-lugares .conteiner-cards:nth-child(2) .back {
+        font-size: 2vw;
+        
+    }
+    
+    .section-lugares .conteiner-cards:nth-child(2) .back div{
+        width: 6%;
+        height: 90%;
+        border-radius: 10px;
+        margin-right: 6px;
+        background-color: var(--color-second);
+        
+    }
+
+    .section-lugares .front  {
+        width: 100%;
+        height: 100%;
+    }
 
     footer {
         padding-bottom: 5vw;
@@ -770,22 +837,22 @@ footer .name-footer {
     }
     
     footer .bth-footer {
-        padding-left: 25%;
+        padding-left: 23%;
     }
 
     footer .social {
-        width: 7vw;
-        height: 7vw;
+        width: 5vw;
+        height: 5vw;
     }
 
     footer .social img {
-        width: 3.2vw;
-        height: 3.2vw;
+        width: 2.5vw;
+        height: 2.5vw;
     }
 
     footer .bth-top {
-        width: 7vw;
-        height: 7vw;
+        width: 5vw;
+        height: 5vw;
     }
 
     footer .bth-top div {
@@ -882,28 +949,28 @@ footer .name-footer {
     }
     
     footer .bth-footer {
-        padding-left: 23.3%;
+        padding-left: 21.3%;
     }
 
     footer .social {
-        width: 5vw;
-        height: 5vw;
-    }
-
-    footer .social img {
         width: 3vw;
         height: 3vw;
     }
 
+    footer .social img {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
     footer .bth-top {
-        width: 5vw;
-        height: 5vw;
+        width: 3vw;
+        height: 3vw;
     }
 
     footer .bth-top div {
-        border-left: 1vw solid transparent;
-        border-right: 1vw solid transparent;
-        border-bottom: 1.5vw solid var(--color-second);
+        border-left: .7vw solid transparent;
+        border-right: .7vw solid transparent;
+        border-bottom: 1vw solid var(--color-second);
     }
 
     footer .name-footer {
