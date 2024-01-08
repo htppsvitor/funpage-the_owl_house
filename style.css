@@ -80,7 +80,7 @@ header .menu-list {
     display: flex;
     width: 160px;
     height: 180px;
-    padding: 20px 0 0 40px;
+    padding: 25px 0 0 40px;
     background-color: var(--color-second);
 
     right:0px;
@@ -91,20 +91,20 @@ header .menu-list {
     
 }
 
-header .menu-list ul,a {
+header .menu-list ul a {
     list-style: none;
     color: var(--color-general);
     text-decoration: none;
+    font-size: 18px;
     transition: .5s;
 
 }
 
-hr {
-    margin: 10px 0 10px 0;
-}
 
-header .menu-list ul,a:hover {
+
+header .menu-list ul a:hover {
     color: var(--background-color);
+    border-bottom:1px solid var(--color-general);
 }
 .menu.active {
     box-shadow: 0px 0px 0px 7px var(--background-color);

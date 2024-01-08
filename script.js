@@ -31,9 +31,4 @@ const menu = new Menu (
     ".menu-list"
 )
 
-menu.init();
-
-
-
-
-
+menu.init();s
